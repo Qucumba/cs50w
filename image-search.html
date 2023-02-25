@@ -11,49 +11,28 @@
     <body>
         <div class="page">
             <div class="header-section">
-                <div class="link-bar">
-                    <a href="index.html">Google Search</a>
-                </div>
+                <ul class="link-bar">
+                    <li class="link-bar-item"><a href="index.html">Google Search</a></li>
+                </ul>
             </div>
+            
             <div class="logo-section">
-                <div class="logo-space">
-                    <img src="google-images-logo.png" alt="google-logo">
-                </div>
+                <img src="google-image-log.png" alt="google-logo">
             </div>
-            <div class="search-section">
-                <form action="https://www.google.com/search">
-                    <div class="form">
-                        <div class="form-items">
-                            <div class="bar">
-                                <div class="icons">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                    <input type="text" name="q">
-                                    <i class="fa-solid fa-microphone"></i>
-                                    <i class="fa-solid fa-camera"></i>
-                                    <button class="button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                </div>
-                            </div>
-                        </div>
+
+            <div class="round-bar">
+                <div class="icons-centered">
+                    <div id="mag-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                </form>
-            </div>
-            <div class="info-section">
-
-            </div>
-            <div class="footer-section">
-                <div>
-
-                </div>
-                <div>
-                    <a href="https://about.google/?utm_source=google-US&utm_medium=referral&utm_campaign=hp-footer&fg=1" class="footer-link">About</a>
-                    <a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/" class="footer-link">Advertising</a>
-                    <a href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/" class="footer-link">Business</a>
-                    <a href="https://www.google.com/search/howsearchworks/?fg=1" class="footer-link">How Search Works</a>
-                </div>
-                <div>
-                    <a href="https://policies.google.com/privacy?hl=en&fg=1" class="footer-link">Privacy</a>
-                    <a href="https://policies.google.com/terms?hl=en&fg=1" class="footer-link">Terms</a>
-                    <a href="https://support.google.com/websearch/answer/2539428?hl=en&co=GENIE.Platform%3DDesktop" class="footer-link">Settings</a>
+                    <div>
+                        <form action="https://www.google.com/search">
+                            <input type="text" name="q" id="search-field" autofocus>
+                            <div class="centered">
+                                <input type="submit" value="Search Images" class="btn">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

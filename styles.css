@@ -8,6 +8,7 @@
 
 .link-bar-item {
     margin: 5px;
+    font-family: arial, sans-serif;
 }
 
 a:link {
@@ -73,8 +74,14 @@ div img {
     width: 500px;
     background: transparent;
     border: none;
+    outline: 0;
     height: 20px;
     margin-left: 10px;
+    appearance: none;
+}
+
+search-field:focus {
+    outline: none!important;
 }
 
 .btn {
@@ -91,10 +98,62 @@ div img {
     min-width: 54px;
     text-align: center;
     cursor: pointer;
-    user-select: none;
 }
 
-.a-row {
+#advanced-h2 {
+    margin: 25px 35px;
+    margin-left: 10px;
+}
+
+#a-red {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+    font-family: arial, sans-serif;
+}
+
+#line {
+    border-bottom: 1px solid #ebebeb;
+}
+
+#form-section {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+}
+
+#a-forms {
     display: flex;
     flex-direction: row;
+}
+
+#a-left, #a-mid, #a-right {
+    display: flex;
+    flex-direction: column;
+}
+
+#a-left, #a-right {
+    font-family: arial, sans-serif;
+}
+
+#a-find {
+    font-size: 16px;
+}
+
+.left-label, .a-right-row {
+    font-size: 13px;
+}
+
+#a-mid {
+    display: flex;
+    flex-direction: column;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+#a-space {
+    color: transparent;
 }
