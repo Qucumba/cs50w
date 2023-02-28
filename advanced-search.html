@@ -12,7 +12,7 @@
         <div class="page">
             <div class="header-section">
                 <ul class="link-bar">
-                    <li class="link-bar-item"><a href="index.html">Google Search</a></li>
+                    <li class="link-bar-item" id="a-links"><a href="index.html">Google Search</a></li>
                 </ul>
             </div>
 
@@ -22,10 +22,10 @@
 
             <div id="line"></div>
 
-            <div action="https://www.google.com/search" id="form-section">
-                <form id="a-forms">
+            <div id="form-section">
+                <form id="a-forms"  action="https://www.google.com/search" >
                     <div id="a-left">
-                        <div class="a-left-space"><label id="a-find">Find images with...</label></div>
+                        <div id=left-header"><label id="a-find">Find images with...</label></div>
                         <div class="a-left-space"><label class="left-label">all these words:</label></div>
                         <div class="a-left-space"><label class="left-label">this exact word or phrase:</label></div>
                         <div class="a-left-space"><label class="left-label">any of these words:</label></div>
@@ -33,20 +33,27 @@
                     </div>
 
                     <div id="a-mid">
-                        <div id="a-space">asdasd</div>
-                        <div class="a-right-space"><input class="a-input" type="text" name="as_q"></div>
-                        <div class="a-right-space"><input class="a-input" type="text" name="as_eqp"></div>
-                        <div class="a-right-space"><input class="a-input" type="text" name="as_oq"></div>
-                        <div class="a-right-sapce"><input class="a-input" type="text" name="as_eq"></div>
+                        <input name="as_st" type="hidden" value="y">
+                        <input id="tbm_input" name="tbm" type="hidden" value="isch">
+                        <input value="en" name="hl" type="hidden">
+                        <div class="a-mid-space" id="a-space">asdasd</div>
+                        <div class="a-mid-space"><input class="a-input" type="text" name="as_q"></div>
+                        <div class="a-mid-space"><input class="a-input" type="text" name="as_epq"></div>
+                        <div class="a-mid-space"><input class="a-input" type="text" name="as_oq"></div>
+                        <div class="a-mid-space"><input class="a-input" type="text" name="as_eq"></div>
+                        <div id="a-button"><input type="submit" value="Advanced Search" id="blue-button"></input></div>
+                        <input id="CIGjud" name="tbs" type="hidden" value="">
                     </div>
 
                     <div id="a-right">
                         <label id="a-todo">To do this in the search box</label>
-                        <div class="a-right-row">Type the important words:<span class="right-label">winter hoarfrost</span></div>
-                        <div class="a-right-row">Put exact words in quotes:<span class="right-label">"frost flower"</span></div>
-                        <div class="a-right-row">Type OR between all the words you wannt:<span class="right-label">trees OR weeds OR grasses</span></div>
-                        <div class="a-right-row">Put a minus sign just before the words you don't want:<span class="right-label">-windows</span></div>
+                        <div class="a-right-space">Type the important words:<span class="right-label">   winter hoarfrost</span></div>
+                        <div class="a-right-space">Put exact words in quotes:<span class="right-label">   "frost flower"</span></div>
+                        <div class="a-right-space">Type OR between all the words you wannt:<span class="right-label">   trees OR weeds OR grasses</span></div>
+                        <div class="a-right-space">Put a minus sign just before the words you don't want:<span class="right-label">   -windows</span></div>
                     </div>
+
+                    <div
                 </form>
             </div>
         </div>
